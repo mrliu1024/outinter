@@ -1,0 +1,23 @@
+1 下载github , 下载库资料
+2 登录 https://echosite.2bdata.com/login 
+3 有图片操作, 下载 配置文件和 客户端 
+4 打开 所在文件的根,目录 打开命令行 输入
+   # windows   echosite -config=echosite.yml start name1 
+5 把组件的文件(必须是index.html 命名的) 托管到node 服务器上 
+6 node 搭建服务器
+   1 下载 npm init -y 
+   2 下载 cnpm i express -S 
+var express = require("express");
+
+var app = express();
+
+app.use(express.static('.'));
+
+app.listen(8080, () => console.log("server start: http://127.0.0.1:8080/"));
+
+
+5 注意 echostie.yml的文件配置
+5 输入 外网网址: http://liuyachao.cross.echosite.cn/
+域名 liuyachao 后缀; 
+
+6 打开两个文件 命令行, 即可
